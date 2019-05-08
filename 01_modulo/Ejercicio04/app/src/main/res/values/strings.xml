@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ejercicio 04</string>
+    <string name="txtedit">Ingresa un texto</string>
+    <string name="txtcheck1">Negrita</string>
+    <string name="txtcheck2">Cursiva</string>
+</resources>
