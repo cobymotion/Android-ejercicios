@@ -32,8 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnCalculo)
     public void hacerCalculo(){
-        //rdSuma.isChecked()
-        Toast.makeText(this, "Presione",
+        int res = 0;
+        int num1 = Integer.parseInt(txtNyumero1.getText().toString());
+        int num2 = Integer.parseInt(txtNyumero2.getText().toString());
+        if(rdSuma.isChecked())
+            res= num1 + num2;
+        else if(rdResta.isChecked())
+            res= num1 - num2;
+        Toast.makeText(this, "El resultado de la operacion es " + res,
                  Toast.LENGTH_LONG).show();
     }
 }
