@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         String []opciones = {"Negritas","Cursivas"};
         ArrayAdapter<String> adapter = new
                 ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_item,opciones);
+                R.layout.spinner_item,opciones);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         mySpinner.setAdapter(adapter);
         mySpinner.setOnItemSelectedListener(new AdapterView
                 .OnItemSelectedListener() {

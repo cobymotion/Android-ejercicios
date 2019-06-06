@@ -30,18 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.checkBold)
     public void checkBold(){
-        if(chkBold.isChecked())
-            edNumero.setTypeface(null, Typeface.BOLD);
-        else
-            edNumero.setTypeface(null, Typeface.NORMAL);
+       verificaCambios();
     }
 
     @OnClick(R.id.checkItalic)
     public void checkItalic(){
-        if(chkItalic.isChecked())
-            edNumero.setTypeface(null, Typeface.ITALIC);
-        else
-            edNumero.setTypeface(null, Typeface.NORMAL);
+       verificaCambios();
+    }
+
+    private void verificaCambios() {
+        if(chkBold.isChecked() && chkItalic.isChecked())
+            edNumero.setTypeface(null, Typeface.BOLD_ITALIC);
+
     }
 
 }
